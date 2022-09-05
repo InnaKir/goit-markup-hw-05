@@ -5,6 +5,7 @@
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --transition-dur-func: 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -89,6 +90,7 @@ width: 1200px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition: color var(--transition-dur-func);
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -112,6 +114,7 @@ width: 1200px;
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
+  transition: color var(--transition-dur-func);
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -311,6 +314,7 @@ position: absolute;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color var(--transition-dur-func);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -324,6 +328,7 @@ position: absolute;
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
+  transition: fill var(--transition-dur-func);
 }
 /*section 5*/
 .clients-list {
@@ -339,11 +344,13 @@ position: absolute;
   height: 92px;
   border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: border-color var(--transition-dur-func);
 }
 .clients-icon {
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
+  transition: fill var(--transition-dur-func);
 }
 
 .clients-link:hover,
@@ -395,6 +402,7 @@ position: absolute;
   line-height: 1.71;
 
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-dur-func);
 }
 .contact-link-footer:hover,
 .contact-link-footer:focus {
@@ -469,12 +477,14 @@ border-radius: 4px;
   padding: 6px 22px 6px 22px;
     background: #F5F4FA;
     border: none;
+    transition: background-color var(--transition-dur-func), color var(--transition-dur-func), box-shadow var(--transition-dur-func);
 }
 
 .btn-all {
   background-color: var(--accent-color);
   color: var(--text-color-theme-dark);
   padding: 6px 25px 6px 25px;
+ 
 }
 
 .portfolio-btn:hover,
@@ -493,7 +503,7 @@ border-radius: 4px;
   background: #FFFFFF;
     border: 1px solid #EEEEEE;
     width: calc((100% - 60px) / 3);
-    height: calc((100% -));
+    transition: box-shadow var(--transition-dur-func);
 }
 .project-item:hover,
 .project-item:focus {
