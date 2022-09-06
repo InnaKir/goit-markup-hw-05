@@ -110,7 +110,10 @@ width: 1200px;
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-
+}
+.header-menu-link::after {
+  content: "";
+  transition: background-color var(--transition-dur-func);
 }
 .color-studio {
   color: var(--accent-color);
